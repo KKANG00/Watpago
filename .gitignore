@@ -1,1 +1,4 @@
 **/Assets.xcassets/
+Pods/
+Podfile
+Podfile.lock

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB781F306A15829AB1F6A30 /* Pods_Watpago_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */; };
 		627B134926A9C6670029FEA3 /* 왓파고.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 627B134826A9C6670029FEA3 /* 왓파고.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		627B134F26A9C6670029FEA3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627B134D26A9C6670029FEA3 /* Interface.storyboard */; };
 		627B135126A9C6680029FEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627B135026A9C6680029FEA3 /* Assets.xcassets */; };
@@ -17,6 +18,9 @@
 		627B136326A9C6690029FEA3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B136226A9C6690029FEA3 /* ComplicationController.swift */; };
 		627B136526A9C6690029FEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627B136426A9C6690029FEA3 /* Assets.xcassets */; };
 		627B137626A9CEEE0029FEA3 /* OutputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B137526A9CEEE0029FEA3 /* OutputController.swift */; };
+		627B137926A9E2A70029FEA3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 627B137826A9E2A70029FEA3 /* .swiftlint.yml */; };
+		88C23A39C32616868BA25A12 /* Pods_Watpago_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C94D9230D0B72457780B4F /* Pods_Watpago_WatchKit_Extension.framework */; };
+		C9CFA3EB795084E7A9CF39BB /* Pods_Watpago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0BE9FC8F8B8845F480D07049 /* Pods-Watpago WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit Extension/Pods-Watpago WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		17C94D9230D0B72457780B4F /* Pods_Watpago_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553B1D2AE04E50910BF080FB /* Pods-Watpago WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit Extension/Pods-Watpago WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		627B134426A9C6670029FEA3 /* Watpago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watpago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		627B134826A9C6670029FEA3 /* 왓파고.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "왓파고.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627B134E26A9C6670029FEA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -76,6 +84,12 @@
 		627B136626A9C6690029FEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		627B136726A9C6690029FEA3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		627B137526A9CEEE0029FEA3 /* OutputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputController.swift; sourceTree = "<group>"; };
+		627B137826A9E2A70029FEA3 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B7B462FC0C5FF28DE7863B62 /* Pods-Watpago WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit App/Pods-Watpago WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67726E4189FA300FAE38610 /* Pods-Watpago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago.debug.xcconfig"; path = "Target Support Files/Pods-Watpago/Pods-Watpago.debug.xcconfig"; sourceTree = "<group>"; };
+		D87F4F39EFFE7D126D7D9B44 /* Pods-Watpago WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit App/Pods-Watpago WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		E16FBD33072F47C1D9F75695 /* Pods-Watpago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago.release.xcconfig"; path = "Target Support Files/Pods-Watpago/Pods-Watpago.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,18 +97,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C23A39C32616868BA25A12 /* Pods_Watpago_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD90864160CF2AB26DEA20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CFA3EB795084E7A9CF39BB /* Pods_Watpago.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD77F893D3BD71A705A019A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB781F306A15829AB1F6A30 /* Pods_Watpago_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E3F7975F98D605EBFF18FC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D67726E4189FA300FAE38610 /* Pods-Watpago.debug.xcconfig */,
+				E16FBD33072F47C1D9F75695 /* Pods-Watpago.release.xcconfig */,
+				B7B462FC0C5FF28DE7863B62 /* Pods-Watpago WatchKit App.debug.xcconfig */,
+				D87F4F39EFFE7D126D7D9B44 /* Pods-Watpago WatchKit App.release.xcconfig */,
+				553B1D2AE04E50910BF080FB /* Pods-Watpago WatchKit Extension.debug.xcconfig */,
+				0BE9FC8F8B8845F480D07049 /* Pods-Watpago WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		627B133D26A9C6670029FEA3 = {
 			isa = PBXGroup;
 			children = (
+				627B137826A9E2A70029FEA3 /* .swiftlint.yml */,
 				627B134C26A9C6670029FEA3 /* Watpago WatchKit App */,
 				627B135B26A9C6690029FEA3 /* Watpago WatchKit Extension */,
 				627B134526A9C6670029FEA3 /* Products */,
+				1E3F7975F98D605EBFF18FC5 /* Pods */,
+				F5693EE0B03FE7F89732208C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +180,16 @@
 			path = "Watpago WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		F5693EE0B03FE7F89732208C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */,
+				202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */,
+				17C94D9230D0B72457780B4F /* Pods_Watpago_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,8 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 627B137226A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago" */;
 			buildPhases = (
+				1B4A843FB3B3D486E9EE6D33 /* [CP] Check Pods Manifest.lock */,
 				627B134226A9C6670029FEA3 /* Resources */,
 				627B137126A9C6690029FEA3 /* Embed Watch Content */,
+				6FD90864160CF2AB26DEA20C /* Frameworks */,
+				627B137726A9E27D0029FEA3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -157,8 +217,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 627B136E26A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago WatchKit App" */;
 			buildPhases = (
+				8D844FD5BEC12D92843417CB /* [CP] Check Pods Manifest.lock */,
 				627B134626A9C6670029FEA3 /* Resources */,
 				627B136D26A9C6690029FEA3 /* Embed App Extensions */,
+				CBD77F893D3BD71A705A019A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 627B136A26A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago WatchKit Extension" */;
 			buildPhases = (
+				2250CEAE8E5CA0C1CD082C5E /* [CP] Check Pods Manifest.lock */,
 				627B135326A9C6690029FEA3 /* Sources */,
 				627B135426A9C6690029FEA3 /* Frameworks */,
 				627B135526A9C6690029FEA3 /* Resources */,
@@ -232,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627B137926A9E2A70029FEA3 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +317,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B4A843FB3B3D486E9EE6D33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watpago-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2250CEAE8E5CA0C1CD082C5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watpago WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		627B137726A9E27D0029FEA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+		8D844FD5BEC12D92843417CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watpago WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		627B135326A9C6690029FEA3 /* Sources */ = {
@@ -410,6 +560,7 @@
 		};
 		627B136B26A9C6690029FEA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553B1D2AE04E50910BF080FB /* Pods-Watpago WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +583,7 @@
 		};
 		627B136C26A9C6690029FEA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE9FC8F8B8845F480D07049 /* Pods-Watpago WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +606,7 @@
 		};
 		627B136F26A9C6690029FEA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B462FC0C5FF28DE7863B62 /* Pods-Watpago WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -475,6 +628,7 @@
 		};
 		627B137026A9C6690029FEA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87F4F39EFFE7D126D7D9B44 /* Pods-Watpago WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -496,6 +650,7 @@
 		};
 		627B137326A9C6690029FEA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67726E4189FA300FAE38610 /* Pods-Watpago.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +664,7 @@
 		};
 		627B137426A9C6690029FEA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16FBD33072F47C1D9F75695 /* Pods-Watpago.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
