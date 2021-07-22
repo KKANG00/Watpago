@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		627B134926A9C6670029FEA3 /* 왓파고.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 627B134826A9C6670029FEA3 /* 왓파고.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		627B134F26A9C6670029FEA3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627B134D26A9C6670029FEA3 /* Interface.storyboard */; };
+		627B135126A9C6680029FEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627B135026A9C6680029FEA3 /* Assets.xcassets */; };
+		627B135826A9C6690029FEA3 /* Watpago WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 627B135726A9C6690029FEA3 /* Watpago WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		627B135D26A9C6690029FEA3 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B135C26A9C6690029FEA3 /* InputController.swift */; };
+		627B135F26A9C6690029FEA3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B135E26A9C6690029FEA3 /* ExtensionDelegate.swift */; };
+		627B136126A9C6690029FEA3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B136026A9C6690029FEA3 /* NotificationController.swift */; };
+		627B136326A9C6690029FEA3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B136226A9C6690029FEA3 /* ComplicationController.swift */; };
+		627B136526A9C6690029FEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627B136426A9C6690029FEA3 /* Assets.xcassets */; };
+		627B137626A9CEEE0029FEA3 /* OutputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B137526A9CEEE0029FEA3 /* OutputController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		627B134A26A9C6670029FEA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627B133E26A9C6670029FEA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 627B134726A9C6670029FEA3;
+			remoteInfo = "Watpago WatchKit App";
+		};
+		627B135926A9C6690029FEA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 627B133E26A9C6670029FEA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 627B135626A9C6690029FEA3;
+			remoteInfo = "Watpago WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		627B136D26A9C6690029FEA3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				627B135826A9C6690029FEA3 /* Watpago WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627B137126A9C6690029FEA3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				627B134926A9C6670029FEA3 /* 왓파고.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		627B134426A9C6670029FEA3 /* Watpago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watpago.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		627B134826A9C6670029FEA3 /* 왓파고.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "왓파고.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		627B134E26A9C6670029FEA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		627B135026A9C6680029FEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		627B135226A9C6680029FEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627B135726A9C6690029FEA3 /* Watpago WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watpago WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		627B135C26A9C6690029FEA3 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		627B135E26A9C6690029FEA3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		627B136026A9C6690029FEA3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		627B136226A9C6690029FEA3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		627B136426A9C6690029FEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		627B136626A9C6690029FEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627B136726A9C6690029FEA3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		627B137526A9CEEE0029FEA3 /* OutputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		627B135426A9C6690029FEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		627B133D26A9C6670029FEA3 = {
+			isa = PBXGroup;
+			children = (
+				627B134C26A9C6670029FEA3 /* Watpago WatchKit App */,
+				627B135B26A9C6690029FEA3 /* Watpago WatchKit Extension */,
+				627B134526A9C6670029FEA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		627B134526A9C6670029FEA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627B134426A9C6670029FEA3 /* Watpago.app */,
+				627B134826A9C6670029FEA3 /* 왓파고.app */,
+				627B135726A9C6690029FEA3 /* Watpago WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		627B134C26A9C6670029FEA3 /* Watpago WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				627B134D26A9C6670029FEA3 /* Interface.storyboard */,
+				627B135026A9C6680029FEA3 /* Assets.xcassets */,
+				627B135226A9C6680029FEA3 /* Info.plist */,
+			);
+			path = "Watpago WatchKit App";
+			sourceTree = "<group>";
+		};
+		627B135B26A9C6690029FEA3 /* Watpago WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				627B135C26A9C6690029FEA3 /* InputController.swift */,
+				627B137526A9CEEE0029FEA3 /* OutputController.swift */,
+				627B135E26A9C6690029FEA3 /* ExtensionDelegate.swift */,
+				627B136026A9C6690029FEA3 /* NotificationController.swift */,
+				627B136226A9C6690029FEA3 /* ComplicationController.swift */,
+				627B136426A9C6690029FEA3 /* Assets.xcassets */,
+				627B136626A9C6690029FEA3 /* Info.plist */,
+				627B136726A9C6690029FEA3 /* PushNotificationPayload.apns */,
+			);
+			path = "Watpago WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		627B134326A9C6670029FEA3 /* Watpago */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627B137226A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago" */;
+			buildPhases = (
+				627B134226A9C6670029FEA3 /* Resources */,
+				627B137126A9C6690029FEA3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				627B134B26A9C6670029FEA3 /* PBXTargetDependency */,
+			);
+			name = Watpago;
+			productName = Watpago;
+			productReference = 627B134426A9C6670029FEA3 /* Watpago.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		627B134726A9C6670029FEA3 /* Watpago WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627B136E26A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago WatchKit App" */;
+			buildPhases = (
+				627B134626A9C6670029FEA3 /* Resources */,
+				627B136D26A9C6690029FEA3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				627B135A26A9C6690029FEA3 /* PBXTargetDependency */,
+			);
+			name = "Watpago WatchKit App";
+			productName = "Watpago WatchKit App";
+			productReference = 627B134826A9C6670029FEA3 /* 왓파고.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		627B135626A9C6690029FEA3 /* Watpago WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627B136A26A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago WatchKit Extension" */;
+			buildPhases = (
+				627B135326A9C6690029FEA3 /* Sources */,
+				627B135426A9C6690029FEA3 /* Frameworks */,
+				627B135526A9C6690029FEA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watpago WatchKit Extension";
+			productName = "Watpago WatchKit Extension";
+			productReference = 627B135726A9C6690029FEA3 /* Watpago WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		627B133E26A9C6670029FEA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					627B134326A9C6670029FEA3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					627B134726A9C6670029FEA3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					627B135626A9C6690029FEA3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 627B134126A9C6670029FEA3 /* Build configuration list for PBXProject "Watpago" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 627B133D26A9C6670029FEA3;
+			productRefGroup = 627B134526A9C6670029FEA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				627B134326A9C6670029FEA3 /* Watpago */,
+				627B134726A9C6670029FEA3 /* Watpago WatchKit App */,
+				627B135626A9C6690029FEA3 /* Watpago WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		627B134226A9C6670029FEA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627B134626A9C6670029FEA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627B135126A9C6680029FEA3 /* Assets.xcassets in Resources */,
+				627B134F26A9C6670029FEA3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627B135526A9C6690029FEA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627B136526A9C6690029FEA3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627B135326A9C6690029FEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627B136126A9C6690029FEA3 /* NotificationController.swift in Sources */,
+				627B136326A9C6690029FEA3 /* ComplicationController.swift in Sources */,
+				627B135F26A9C6690029FEA3 /* ExtensionDelegate.swift in Sources */,
+				627B137626A9CEEE0029FEA3 /* OutputController.swift in Sources */,
+				627B135D26A9C6690029FEA3 /* InputController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		627B134B26A9C6670029FEA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 627B134726A9C6670029FEA3 /* Watpago WatchKit App */;
+			targetProxy = 627B134A26A9C6670029FEA3 /* PBXContainerItemProxy */;
+		};
+		627B135A26A9C6690029FEA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 627B135626A9C6690029FEA3 /* Watpago WatchKit Extension */;
+			targetProxy = 627B135926A9C6690029FEA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		627B134D26A9C6670029FEA3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				627B134E26A9C6670029FEA3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		627B136826A9C6690029FEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		627B136926A9C6690029FEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		627B136B26A9C6690029FEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7M9F527TU;
+				INFOPLIST_FILE = "Watpago WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.Watpago.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		627B136C26A9C6690029FEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7M9F527TU;
+				INFOPLIST_FILE = "Watpago WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.Watpago.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		627B136F26A9C6690029FEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7M9F527TU;
+				IBSC_MODULE = Watpago_WatchKit_Extension;
+				INFOPLIST_FILE = "Watpago WatchKit App/Info.plist";
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.Watpago.watchkitapp;
+				PRODUCT_NAME = "왓파고";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		627B137026A9C6690029FEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7M9F527TU;
+				IBSC_MODULE = Watpago_WatchKit_Extension;
+				INFOPLIST_FILE = "Watpago WatchKit App/Info.plist";
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.Watpago.watchkitapp;
+				PRODUCT_NAME = "왓파고";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		627B137326A9C6690029FEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T7M9F527TU;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.Watpago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		627B137426A9C6690029FEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T7M9F527TU;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.Watpago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		627B134126A9C6670029FEA3 /* Build configuration list for PBXProject "Watpago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627B136826A9C6690029FEA3 /* Debug */,
+				627B136926A9C6690029FEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627B136A26A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627B136B26A9C6690029FEA3 /* Debug */,
+				627B136C26A9C6690029FEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627B136E26A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627B136F26A9C6690029FEA3 /* Debug */,
+				627B137026A9C6690029FEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627B137226A9C6690029FEA3 /* Build configuration list for PBXNativeTarget "Watpago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627B137326A9C6690029FEA3 /* Debug */,
+				627B137426A9C6690029FEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 627B133E26A9C6670029FEA3 /* Project object */;
+}

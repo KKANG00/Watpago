@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+    </dependencies>
+    <scenes>
+        <!--output-->
+        <scene sceneID="VsK-bV-QfU">
+            <objects>
+                <controller identifier="output" id="dGS-Da-TTF" customClass="OutputController" customModule="Watpago_WatchKit_Extension">
+                    <items>
+                        <imageView width="74" height="71" alignment="center" verticalAlignment="center" image="smiley.fill" catalog="system" id="f35-yR-aE5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <label width="1" alignment="left" text="Label" textAlignment="left" numberOfLines="2" id="CKM-yv-Qmq"/>
+                        <label width="1" alignment="left" text="~~~" textAlignment="center" id="gE7-eU-qW6">
+                            <color key="textColor" red="0.061154238880000003" green="0.66416770219999999" blue="0.87453776599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="CKM-yv-Qmq" id="V6a-Zi-Bip"/>
+                        <outlet property="outputLabel" destination="gE7-eU-qW6" id="xjg-84-xsY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="526" y="345"/>
+        </scene>
+        <!--input-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="input" id="AgC-eL-Hgc" customClass="InputController" customModule="Watpago_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="How to say" id="DRl-Ok-mmy"/>
+                        <textField width="1" alignment="left" id="W5G-tl-fbd">
+                            <connections>
+                                <action selector="TypingEnded:" destination="AgC-eL-Hgc" id="Nve-Ir-v6E"/>
+                            </connections>
+                        </textField>
+                        <picker height="40" alignment="left" id="4yO-p4-Gke">
+                            <connections>
+                                <action selector="pickerSelected:" destination="AgC-eL-Hgc" id="fUb-Bc-kiF"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Show me" id="Bvg-MK-6OZ">
+                            <color key="backgroundColor" red="0.061154238880000003" green="0.66416770219999999" blue="0.87453776599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="ShowmeButtonPressed" destination="AgC-eL-Hgc" id="xIy-er-xad"/>
+                                <segue destination="dGS-Da-TTF" kind="modal" identifier="goResult" id="Kmt-ui-PqE"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="InputTextField" destination="W5G-tl-fbd" id="feu-Bf-AxE"/>
+                        <outlet property="languagePicker" destination="4yO-p4-Gke" id="MkB-b0-oCN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Watpago_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="773"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Watpago_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="440"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smiley.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
