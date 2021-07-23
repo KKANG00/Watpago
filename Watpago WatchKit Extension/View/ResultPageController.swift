@@ -15,9 +15,12 @@ class ResultPageController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         self.setTitle("다시하기")
-        let description = context as! String
-        print(description)
+        let tuple = context as! (String, String)
+        let description = tuple.0
+        let resultText = tuple.1
+
         descriptionLabel.setText(description)
+        outputLabel.setText(resultText)
     }
 
     override func willActivate() {

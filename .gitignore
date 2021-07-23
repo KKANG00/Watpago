@@ -2,3 +2,5 @@
 Pods/
 Podfile
 Podfile.lock
+
+**/Apiconfig.swift

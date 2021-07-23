@@ -13,8 +13,8 @@
                     <items>
                         <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="PsX-5L-Xnk">
                             <items>
-                                <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="CKM-yv-Qmq"/>
-                                <label width="1" alignment="left" text="Il fait trop chaud." textAlignment="center" numberOfLines="2" id="gE7-eU-qW6">
+                                <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="5" id="CKM-yv-Qmq"/>
+                                <label width="1" alignment="left" textAlignment="center" numberOfLines="5" id="gE7-eU-qW6">
                                     <color key="textColor" red="0.061154238880000003" green="0.66416770219999999" blue="0.87453776599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                                 </label>
@@ -37,7 +37,7 @@
                         <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="Jvf-CK-guX">
                             <items>
                                 <label alignment="left" text="How to say" id="DRl-Ok-mmy"/>
-                                <textField width="1" alignment="left" text="너무 더워요." id="W5G-tl-fbd">
+                                <textField width="1" alignment="left" id="W5G-tl-fbd">
                                     <connections>
                                         <action selector="TypingEnded:" destination="AgC-eL-Hgc" id="Nve-Ir-v6E"/>
                                     </connections>
@@ -63,29 +63,6 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
-                    <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
-                    </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
-                    <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                    </connections>
-                </notificationController>
-            </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="왓파고" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="526" y="643"/>
         </scene>
     </scenes>
 </document>

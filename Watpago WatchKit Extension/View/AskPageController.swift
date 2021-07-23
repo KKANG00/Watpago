@@ -8,17 +8,23 @@
 import WatchKit
 import Foundation
 
-class AskPageController: WKInterfaceController {
+class AskPageController: WKInterfaceController, ApiCallerDelegate {
     @IBOutlet weak var InputTextField: WKInterfaceTextField!
     @IBOutlet weak var languagePicker: WKInterfacePicker!
 
     var typedText: NSString = ""
     var selectedLanguage = "in English"
+    var language = "en"
 
-    var languages = ["in English", "in French"]
+    var languages = [("in English", "en"), ("in French", "fr")]
+    var translatedText: String = ""
+    var descriptionText: String = ""
+
+    let apiCaller = ApiCaller()
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
+        apiCaller.delegate = self
 
     }
 
@@ -29,7 +35,7 @@ class AskPageController: WKInterfaceController {
 
         let pickerItems: [WKPickerItem] = languages.map {
             let pickerItem = WKPickerItem()
-            pickerItem.title = $0
+            pickerItem.title = $0.0
             return pickerItem
         }
 
@@ -45,15 +51,26 @@ class AskPageController: WKInterfaceController {
     }
 
     @IBAction func pickerSelected(_ value: Int) {
-        selectedLanguage = languages[value]
+        selectedLanguage = languages[value].0
+        language = languages[value].1
     }
 
     @IBAction func ShowmeButtonPressed() {
         if typedText == "" {
             InputTextField.setPlaceholder("!입력해주세요!")
         } else {
-            let description: String = "\"\(typedText)\"\n\(selectedLanguage) is"
-            pushController(withName: "resultPage", context: description)
+            let text = typedText as String
+            descriptionText = "\"\(text)\"\n\(selectedLanguage) is"
+
+            self.apiCaller.RequestTranslation(text, self.language)
+        }
+    }
+
+    func sendTranslatedText(_ resultText: String) {
+        translatedText = resultText
+
+        DispatchQueue.main.async {
+            self.pushController(withName: "resultPage", context: (self.descriptionText, self.translatedText))
         }
     }
 
