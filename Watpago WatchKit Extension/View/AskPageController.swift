@@ -31,7 +31,7 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         InputTextField.setPlaceholder("입력해주세요.")
-        InputTextField.setText("")
+        InputTextField.setText("다 잘될거야")
 
         let pickerItems: [WKPickerItem] = languages.map {
             let pickerItem = WKPickerItem()
@@ -56,14 +56,15 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
     }
 
     @IBAction func ShowmeButtonPressed() {
-        if typedText == "" {
-            InputTextField.setPlaceholder("!입력해주세요!")
-        } else {
-            let text = typedText as String
+//        if typedText == "" {
+//            InputTextField.setPlaceholder("!입력해주세요!")
+//        } else {
+//            let text = typedText as String
+            let text = "다 잘될거야"
             descriptionText = "\"\(text)\"\n\(selectedLanguage) is"
 
             self.apiCaller.RequestTranslation(text, self.language)
-        }
+//        }
     }
 
     func sendTranslatedText(_ resultText: String) {
