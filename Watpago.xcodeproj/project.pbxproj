@@ -12,12 +12,12 @@
 		627B134F26A9C6670029FEA3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627B134D26A9C6670029FEA3 /* Interface.storyboard */; };
 		627B135126A9C6680029FEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627B135026A9C6680029FEA3 /* Assets.xcassets */; };
 		627B135826A9C6690029FEA3 /* Watpago WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 627B135726A9C6690029FEA3 /* Watpago WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		627B135D26A9C6690029FEA3 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B135C26A9C6690029FEA3 /* InputController.swift */; };
+		627B135D26A9C6690029FEA3 /* AskPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B135C26A9C6690029FEA3 /* AskPageController.swift */; };
 		627B135F26A9C6690029FEA3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B135E26A9C6690029FEA3 /* ExtensionDelegate.swift */; };
 		627B136126A9C6690029FEA3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B136026A9C6690029FEA3 /* NotificationController.swift */; };
 		627B136326A9C6690029FEA3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B136226A9C6690029FEA3 /* ComplicationController.swift */; };
 		627B136526A9C6690029FEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627B136426A9C6690029FEA3 /* Assets.xcassets */; };
-		627B137626A9CEEE0029FEA3 /* OutputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B137526A9CEEE0029FEA3 /* OutputController.swift */; };
+		627B137626A9CEEE0029FEA3 /* ResultPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B137526A9CEEE0029FEA3 /* ResultPageController.swift */; };
 		627B137926A9E2A70029FEA3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 627B137826A9E2A70029FEA3 /* .swiftlint.yml */; };
 		88C23A39C32616868BA25A12 /* Pods_Watpago_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C94D9230D0B72457780B4F /* Pods_Watpago_WatchKit_Extension.framework */; };
 		C9CFA3EB795084E7A9CF39BB /* Pods_Watpago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */; };
@@ -76,14 +76,14 @@
 		627B135026A9C6680029FEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627B135226A9C6680029FEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		627B135726A9C6690029FEA3 /* Watpago WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watpago WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		627B135C26A9C6690029FEA3 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		627B135C26A9C6690029FEA3 /* AskPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskPageController.swift; sourceTree = "<group>"; };
 		627B135E26A9C6690029FEA3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		627B136026A9C6690029FEA3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		627B136226A9C6690029FEA3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		627B136426A9C6690029FEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627B136626A9C6690029FEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		627B136726A9C6690029FEA3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		627B137526A9CEEE0029FEA3 /* OutputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputController.swift; sourceTree = "<group>"; };
+		627B137526A9CEEE0029FEA3 /* ResultPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPageController.swift; sourceTree = "<group>"; };
 		627B137826A9E2A70029FEA3 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B7B462FC0C5FF28DE7863B62 /* Pods-Watpago WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit App/Pods-Watpago WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,8 +168,8 @@
 		627B135B26A9C6690029FEA3 /* Watpago WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				627B135C26A9C6690029FEA3 /* InputController.swift */,
-				627B137526A9CEEE0029FEA3 /* OutputController.swift */,
+				627B135C26A9C6690029FEA3 /* AskPageController.swift */,
+				627B137526A9CEEE0029FEA3 /* ResultPageController.swift */,
 				627B135E26A9C6690029FEA3 /* ExtensionDelegate.swift */,
 				627B136026A9C6690029FEA3 /* NotificationController.swift */,
 				627B136226A9C6690029FEA3 /* ComplicationController.swift */,
@@ -412,8 +412,8 @@
 				627B136126A9C6690029FEA3 /* NotificationController.swift in Sources */,
 				627B136326A9C6690029FEA3 /* ComplicationController.swift in Sources */,
 				627B135F26A9C6690029FEA3 /* ExtensionDelegate.swift in Sources */,
-				627B137626A9CEEE0029FEA3 /* OutputController.swift in Sources */,
-				627B135D26A9C6690029FEA3 /* InputController.swift in Sources */,
+				627B137626A9CEEE0029FEA3 /* ResultPageController.swift in Sources */,
+				627B135D26A9C6690029FEA3 /* AskPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

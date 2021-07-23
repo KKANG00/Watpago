@@ -8,21 +8,25 @@
 import WatchKit
 import Foundation
 
-class InputController: WKInterfaceController {
+class AskPageController: WKInterfaceController {
     @IBOutlet weak var InputTextField: WKInterfaceTextField!
     @IBOutlet weak var languagePicker: WKInterfacePicker!
 
     var typedText: NSString = ""
-    var selectedLanguage = ""
+    var selectedLanguage = "in English"
 
     var languages = ["in English", "in French"]
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
+
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        InputTextField.setPlaceholder("입력해주세요.")
+        InputTextField.setText("")
+
         let pickerItems: [WKPickerItem] = languages.map {
             let pickerItem = WKPickerItem()
             pickerItem.title = $0
@@ -45,9 +49,12 @@ class InputController: WKInterfaceController {
     }
 
     @IBAction func ShowmeButtonPressed() {
-        let description = "\"\(typedText)\" \(selectedLanguage) is ..."
-
-        presentController(withName: "output", context: description)
+        if typedText == "" {
+            InputTextField.setPlaceholder("!입력해주세요!")
+        } else {
+            let description: String = "\"\(typedText)\"\n\(selectedLanguage) is"
+            pushController(withName: "resultPage", context: description)
+        }
     }
 
 }
