@@ -46,7 +46,7 @@ protocol ApiCallerDelegate {
 response를 받았을 때 실행되는 sendTranslatedText 함수를 구현해 내부에서 화면 전환  
 
 - pushController는 main Thread 사용  
-에러메세지  *pushController called from queue other than main. This is not supported and may fail in the future.*  
+(에러메세지  *pushController called from queue other than main. This is not supported and may fail in the future.*)  
 UI에 관여하는 pushController 메소드 또한 main Thread에서 실행되어야함  
 ```
 DispatchQueue.main.async {  
