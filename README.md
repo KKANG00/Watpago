@@ -53,3 +53,20 @@ DispatchQueue.main.async {
     self.pushController(withName: "resultPage", context: (self.descriptionText, self.translatedText))  
 }  
 ```
+
+## TODO
+### 기능추가
+1. User Default: 기본 언어설정, 사용할 언어 선택  
+2. 읽어주기 기능(발음)  
+3. 언어감지 추가로 다국어 번역 지원  
+
+### 에러처리(+에러화면)
+1. api 통신 실패시  
+2. 입력이 너무 긴경우 등등  
+
+### 기타
+1. English 밑에짤리는거 수정  
+2. ~~show me 버튼 한번 눌리고 비활~~  
+3. 앱이름  
+4. 앱 아이콘 제작  
+5. API 사용량 -> 제휴? 확인필요  

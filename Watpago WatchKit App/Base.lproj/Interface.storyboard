@@ -58,6 +58,7 @@
                     </items>
                     <connections>
                         <outlet property="InputTextField" destination="W5G-tl-fbd" id="feu-Bf-AxE"/>
+                        <outlet property="ShowmeButton" destination="Bvg-MK-6OZ" id="Jmw-ox-UZj"/>
                         <outlet property="languagePicker" destination="4yO-p4-Gke" id="MkB-b0-oCN"/>
                     </connections>
                 </controller>

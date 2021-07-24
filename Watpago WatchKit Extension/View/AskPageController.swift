@@ -11,6 +11,7 @@ import Foundation
 class AskPageController: WKInterfaceController, ApiCallerDelegate {
     @IBOutlet weak var InputTextField: WKInterfaceTextField!
     @IBOutlet weak var languagePicker: WKInterfacePicker!
+    @IBOutlet weak var ShowmeButton: WKInterfaceButton!
 
     var typedText: NSString = ""
     var selectedLanguage = "in English"
@@ -32,6 +33,7 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
         // This method is called when watch view controller is about to be visible to user
         InputTextField.setPlaceholder("입력해주세요.")
         InputTextField.setText("")
+        ShowmeButton.setEnabled(true)
 
         let pickerItems: [WKPickerItem] = languages.map {
             let pickerItem = WKPickerItem()
@@ -59,6 +61,7 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
         if typedText == "" {
             InputTextField.setPlaceholder("!입력해주세요!")
         } else {
+            ShowmeButton.setEnabled(false)
             let text = typedText as String
             descriptionText = "\"\(text)\"\n\(selectedLanguage) is"
 
