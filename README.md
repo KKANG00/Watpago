@@ -11,26 +11,9 @@ https://developers.naver.com/products/papago/nmt/nmt.md
 - - -
 ## UI
 
-![](https://github.com/KKANG00/Watpago/blob/main/ScreenShots.png)
+![](https://github.com/KKANG00/Watpago/blob/main/ScreenShots2.png)
 
-WKInterfaceLabel, WKInterfaceTextField, WKInterfacePicker 사용  
-
-- WKInterfaceTextField  
-TextField 터치 시 입력을 받을 수 있는 기능이 실행되고  
-입력이 끝남과 동시에 실행되는 IBAction으로 변화되는 값을 캐치할 수 있다.  
-
-- WKInterfacePicker  
-DataSource로 WKPickerItem 리스트를 만들어 setItems 함수로 설정해야한다.  
-List(기본 텍스트), Stack(이미지 스택), Sequence(이미지 애니메이션) 3가지 style을 지원한다.  
-WKInterfaceTextField와 동일하게 IBAction을 만들어 변화되는 값을 캐치할 수 있다.  
-
-- 화면전환  
-presentController(withName: String, context: Any?)  
--> 새로운 single interface controller를 띄워준다.  
-pushController(withName: String, context: Any?)  
--> 새로운 interface controller를 스택으로 쌓는다.  
-popToRootController()  
--> 위에 쌓여있는 모든 controller를 제거하고 Root controller로 돌아간다.  
+WKInterfaceLabel, WKInterfaceTextField, WKInterfacePicker
 
 ## Troubleshotting  
 api request에 대한 response를 받기 전에 화면이 넘어가는 Networking 비동기 처리 이슈  
@@ -43,22 +26,16 @@ protocol ApiCallerDelegate {
 ```
 
 - AskPageController 내의 delegate 함수  
-response를 받았을 때 실행되는 sendTranslatedText 함수를 구현해 내부에서 화면 전환  
-
-- pushController는 main Thread 사용  
-(에러메세지  *pushController called from queue other than main. This is not supported and may fail in the future.*)  
-UI에 관여하는 pushController 메소드 또한 main Thread에서 실행되어야함  
-```
-DispatchQueue.main.async {  
-    self.pushController(withName: "resultPage", context: (self.descriptionText, self.translatedText))  
-}  
-```
+api response를 받았을 때 delegate 함수를 실행하여 번역결과 전달 및 내부에서 화면 전환  
 
 ## TODO
 ### 기능추가
-1. User Default: 기본 언어설정, 사용할 언어 선택  
-2. 읽어주기 기능(발음)  
+1. User Default: 기본 언어설정, 사용할 언어 선택 => 설정화면 추가필요  
+2. ~~읽어주기 기능 (발음)~~  
+AVFoundation 사용  
 3. 언어감지 추가로 다국어 번역 지원  
+4. ~~번역가능 언어 추가~~  
+(한국어 -> 영어, 일본어, 중국어, 스페인어, 중국어 간체, 스페인어, 프랑스어, 러시아어, 태국어, 인도네시아어, 독일어, 이탈리아어)  
 
 ### 에러처리(+에러화면)
 1. api 통신 실패시  
@@ -68,5 +45,6 @@ DispatchQueue.main.async {
 1. English 밑에짤리는거 수정  
 2. ~~show me 버튼 한번 눌리고 비활~~  
 3. 앱이름  
-4. 앱 아이콘 제작  
-5. API 사용량 -> 제휴? 확인필요  
+4. 앱 아이콘    
+5. API 사용량  
+ 

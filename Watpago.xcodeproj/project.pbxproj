@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1BB781F306A15829AB1F6A30 /* Pods_Watpago_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */; };
 		6204BE9426AAB5DF0092F099 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6204BE9226AAB3FA0092F099 /* ApiCaller.swift */; };
+		626DCA3726AD479200059965 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DCA3626AD479200059965 /* Language.swift */; };
+		626DCA3926AD48C800059965 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DCA3826AD48C800059965 /* Languages.swift */; };
 		627B134926A9C6670029FEA3 /* 왓파고.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 627B134826A9C6670029FEA3 /* 왓파고.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		627B134F26A9C6670029FEA3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627B134D26A9C6670029FEA3 /* Interface.storyboard */; };
 		627B135126A9C6680029FEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627B135026A9C6680029FEA3 /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		553B1D2AE04E50910BF080FB /* Pods-Watpago WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit Extension/Pods-Watpago WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6204BE9226AAB3FA0092F099 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		626DCA3626AD479200059965 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		626DCA3826AD48C800059965 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		627B134426A9C6670029FEA3 /* Watpago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watpago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		627B134826A9C6670029FEA3 /* 왓파고.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "왓파고.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627B134E26A9C6670029FEA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 			children = (
 				6204BE9226AAB3FA0092F099 /* ApiCaller.swift */,
 				62AFFEE526AB007B00800717 /* Apiconfig.swift */,
+				626DCA3626AD479200059965 /* Language.swift */,
+				626DCA3826AD48C800059965 /* Languages.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -427,8 +433,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6204BE9426AAB5DF0092F099 /* ApiCaller.swift in Sources */,
+				626DCA3926AD48C800059965 /* Languages.swift in Sources */,
 				627B136326A9C6690029FEA3 /* ComplicationController.swift in Sources */,
 				62AFFEE626AB007B00800717 /* Apiconfig.swift in Sources */,
+				626DCA3726AD479200059965 /* Language.swift in Sources */,
 				627B135F26A9C6690029FEA3 /* ExtensionDelegate.swift in Sources */,
 				627B137626A9CEEE0029FEA3 /* ResultPageController.swift in Sources */,
 				627B135D26A9C6690029FEA3 /* AskPageController.swift in Sources */,

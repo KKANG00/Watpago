@@ -20,6 +20,12 @@
                                 </label>
                             </items>
                         </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Speak" id="d1U-do-O7X">
+                            <color key="backgroundColor" red="0.061154238880000003" green="0.66416770219999999" blue="0.87453776599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="SpeakBtnPressed" destination="dGS-Da-TTF" id="URk-L2-Mz8"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="descriptionLabel" destination="CKM-yv-Qmq" id="V6a-Zi-Bip"/>
@@ -36,7 +42,7 @@
                     <items>
                         <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="Jvf-CK-guX">
                             <items>
-                                <label alignment="left" text="How to say" id="DRl-Ok-mmy"/>
+                                <label width="1" alignment="left" text="How to say" textAlignment="center" id="DRl-Ok-mmy"/>
                                 <textField width="1" alignment="left" id="W5G-tl-fbd">
                                     <connections>
                                         <action selector="TypingEnded:" destination="AgC-eL-Hgc" id="Nve-Ir-v6E"/>
@@ -47,14 +53,14 @@
                                         <action selector="pickerSelected:" destination="AgC-eL-Hgc" id="fUb-Bc-kiF"/>
                                     </connections>
                                 </picker>
-                                <button width="1" alignment="left" title="Show me" id="Bvg-MK-6OZ">
-                                    <color key="backgroundColor" red="0.061154238880000003" green="0.66416770219999999" blue="0.87453776599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <connections>
-                                        <action selector="ShowmeButtonPressed" destination="AgC-eL-Hgc" id="xIy-er-xad"/>
-                                    </connections>
-                                </button>
                             </items>
                         </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Show me" id="Bvg-MK-6OZ">
+                            <color key="backgroundColor" red="0.061154238880000003" green="0.66416770219999999" blue="0.87453776599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="ShowmeButtonPressed" destination="AgC-eL-Hgc" id="xIy-er-xad"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="InputTextField" destination="W5G-tl-fbd" id="feu-Bf-AxE"/>
