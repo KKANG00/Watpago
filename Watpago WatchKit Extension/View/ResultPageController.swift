@@ -14,28 +14,23 @@ class ResultPageController: WKInterfaceController {
     @IBOutlet weak var outputLabel: WKInterfaceLabel!
 
     var translatedText: String?
-    var selectedLanguageIndex: Int?
 
     let synthesizer = AVSpeechSynthesizer()
     var utterance: AVSpeechUtterance?
+    var vshort = ""
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         self.setTitle("다시하기")
-        let tuple = context as! (String, String, Int)
+        let tuple = context as! (String, String, String)
         let description = tuple.0
         let resultText = tuple.1
-        selectedLanguageIndex = tuple.2
+        vshort = tuple.2
 
         translatedText = resultText
 
         descriptionLabel.setText(description)
         outputLabel.setText(resultText)
-
-        utterance = AVSpeechUtterance(string: translatedText ?? "")
-        if let index = selectedLanguageIndex {
-            utterance!.voice = AVSpeechSynthesisVoice(language: Languages.languages[index].voiceShort)
-        }
     }
 
     override func willActivate() {
@@ -47,6 +42,10 @@ class ResultPageController: WKInterfaceController {
     }
 
     @IBAction func SpeakBtnPressed() {
+        utterance = AVSpeechUtterance(string: translatedText ?? "")
+        utterance!.voice = AVSpeechSynthesisVoice(language: vshort)
+        utterance!.volume = UserDefaults.standard.float(forKey: "Volume")
+
         synthesizer.speak(utterance!)
     }
 

@@ -7,19 +7,23 @@
 
 import Foundation
 
-struct Languages {
-    static let languages = [
-        Language("in English", "en", "en-US"),
-        Language("in French", "fr", "fr-FR"),
+struct Settings {
+    var languages: [Language] = []
+    var Volume: Float
 
-//        Language("in Chinese", "zh-CN", "zh-CN"),
-//        Language("in Spanish", "es", "es-ES"),
-//        Language("in Russian", "ru", "ru-RU"),
-//        Language("in Thai", "th", "th-TH"),
-//        Language("in Indonesian", "id", "id-ID"),
-//        Language("in German", "de", "de-DE"),
-//        Language("in Italian", "it", "it-IT")
-    ]
+    init(_ languageState: [Bool], _ volume: Float) {
+        if languageState.isEmpty {
+            languages = []
+        } else {
+            var i = 0
+            for lan in defaultLanguages.Languages {
+                languages.append(Language(lan.0, lan.1, lan.2, languageState[i]))
+                i += 1
+            }
+        }
+
+        Volume = volume
+    }
 }
 
 // 한국어(ko)-영어(en), en-US

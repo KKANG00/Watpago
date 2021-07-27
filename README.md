@@ -2,8 +2,10 @@
 간단한 생활표현을 영어나 프랑스어로 검색할 수 있는 애플워치용 번역앱  
 
 - watchOS용 WatchKit 적용  
-- 한국어 -> 영어, 프랑스어 번역 기능 구현  
-**(한국어 -> 일본어, 중국어, 스페인어, 중국어 간체, 스페인어, 러시아어, 태국어, 인도네시아어, 독일어, 이탈리아어 추가)**  
+- 한국어 -> 영어, 프랑스어 번역 가능  
+- **한국어 -> 일본어, 중국어, 스페인어, 중국어 간체, 스페인어, 러시아어, 태국어, 인도네시아어, 독일어, 이탈리아어 추가**  
+- **발음 읽어주기 Speak 기능**  
+- **사용 언어 선택, 볼륨 조절 기능 추가**  
 
 - 네이버 파파고 API 사용  
 https://developers.naver.com/products/papago/nmt/nmt.md  
@@ -12,8 +14,9 @@ https://developers.naver.com/products/papago/nmt/nmt.md
 ## UI
 
 ![](https://github.com/KKANG00/Watpago/blob/main/ScreenShots2.png)
+![](https://github.com/KKANG00/Watpago/blob/main/ScreenShots3.png)
 
-WKInterfaceLabel, WKInterfaceTextField, WKInterfacePicker
+WKInterfaceLabel, WKInterfaceTextField, WKInterfacePicker, WKInterfaceTable, WKInterfaceSlider  
 
 ## Troubleshotting  
 api request에 대한 response를 받기 전에 화면이 넘어가는 Networking 비동기 처리 이슈  
@@ -30,7 +33,7 @@ api response를 받았을 때 delegate 함수를 실행하여 번역결과 전�
 
 ## TODO
 ### 기능추가
-1. User Default: 기본 언어설정, 사용할 언어 선택 => 설정화면 추가필요  
+1. ~~User Default: 기본 언어설정, 사용할 언어 선택 => 설정화면 추가필요~~  
 2. ~~읽어주기 기능 (발음)~~  
 **AVFoundation 사용**  
 3. 언어감지 api 추가로 입력 텍스트 다국어 지원  

@@ -11,10 +11,12 @@ struct Language {
     let pickerTitle: String
     let translateShort: String
     let voiceShort: String
+    var selected: Bool
 
-    init(_ pickertitle: String, _ tshort: String, _ vshort: String) {
+    init(_ pickertitle: String, _ tshort: String, _ vshort: String, _ selectedvalue: Bool) {
         pickerTitle = pickertitle
         translateShort = tshort
         voiceShort = vshort
+        selected = selectedvalue
     }
 }

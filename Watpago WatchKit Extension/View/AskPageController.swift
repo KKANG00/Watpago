@@ -13,13 +13,17 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
     @IBOutlet weak var languagePicker: WKInterfacePicker!
     @IBOutlet weak var ShowmeButton: WKInterfaceButton!
 
-    var languages = Languages.languages
+    var UsingLanguages: [Bool] = UserDefaults.standard.array(forKey: "LanguageState") as? [Bool] ??
+                                    [Bool].init(repeating: true, count: defaultLanguages.Languages.count)
+    var userSetting: Settings = Settings([], 0)
+    var languages: [Language] = []
 
-    var typedText: NSString = ""
+    var typedText: NSString = "안녕하세요."
 
     var selectedLanguageIndex = 0
     var selectedPickerTitle = ""
     var selectedtranslateShort = ""
+    var selectedvoiceShort = ""
 
     var descriptionText: String = ""
 
@@ -28,28 +32,35 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         apiCaller.delegate = self
-
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         InputTextField.setPlaceholder("입력해주세요.")
-        InputTextField.setText("")
+//        InputTextField.setText("")
+        InputTextField.setText("안녕하세요.")
         ShowmeButton.setEnabled(true)
 
-        let pickerItems: [WKPickerItem] = languages
-            .sorted(by: { return $0.pickerTitle < $1.pickerTitle
-        }).map {
-            let pickerItem = WKPickerItem()
-            pickerItem.title = $0.pickerTitle
-            return pickerItem
+        UsingLanguages = UserDefaults.standard.array(forKey: "LanguageState") as? [Bool] ?? UsingLanguages
+        userSetting = Settings(UsingLanguages, UserDefaults.standard.float(forKey: "Volume"))
+        languages = userSetting.languages.filter {
+            return $0.selected
         }
 
-        languagePicker.setItems(pickerItems)
+        let pickerItems: [WKPickerItem] = languages
+            .map {
+                let pickerItem = WKPickerItem()
+                pickerItem.title = "in \($0.pickerTitle)"
+                return pickerItem
+            }
 
+        languagePicker.setItems(pickerItems)
         selectedLanguageIndex = 0
+        languagePicker.setSelectedItemIndex(selectedLanguageIndex)
         selectedPickerTitle = languages[selectedLanguageIndex].pickerTitle
         selectedtranslateShort = languages[selectedLanguageIndex].translateShort
+        selectedvoiceShort = languages[selectedLanguageIndex].voiceShort
+
     }
 
     @IBAction func TypingEnded(_ value: NSString?) {
@@ -60,6 +71,7 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
         selectedPickerTitle = languages[value].pickerTitle
         selectedLanguageIndex = value
         selectedtranslateShort = languages[value].translateShort
+        selectedvoiceShort = languages[value].voiceShort
     }
 
     @IBAction func ShowmeButtonPressed() {
@@ -69,7 +81,7 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
             ShowmeButton.setEnabled(false)
 
             let text = typedText as String
-            descriptionText = "\"\(text)\"\n\(selectedPickerTitle) is"
+            descriptionText = "\"\(text)\"\nin \(selectedPickerTitle) is"
 
             self.apiCaller.RequestTranslation(text, self.selectedtranslateShort)
         }
@@ -77,7 +89,7 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
 
     func sendTranslatedText(_ resultText: String) {
         DispatchQueue.main.async {
-            self.pushController(withName: "resultPage", context: (self.descriptionText, resultText, self.selectedLanguageIndex))
+            self.pushController(withName: "ResultPage", context: (self.descriptionText, resultText, self.selectedvoiceShort))
         }
     }
 
