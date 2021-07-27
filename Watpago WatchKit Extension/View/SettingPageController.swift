@@ -26,7 +26,6 @@ class SettingPageController: WKInterfaceController {
         userdefaultLanguateState = UserDefaults.standard.array(forKey: "LanguageState")
             as? [Bool] ?? userdefaultLanguateState
         userdefaultVolume = UserDefaults.standard.float(forKey: "Volume")
-//        print(userdefaultLanguateState)
         loadTable()
         speakVolume.setValue(userdefaultVolume)
     }
@@ -60,7 +59,7 @@ class SettingPageController: WKInterfaceController {
     }
 
     @IBAction func saveButtonPressed() {
-        if userdefaultLanguateState.filter { $0 }.count > 0 {
+        if userdefaultLanguateState.filter({$0}).count > 0 {
             UserDefaults.standard.set(userdefaultLanguateState, forKey: "LanguageState")
             UserDefaults.standard.set(userdefaultVolume, forKey: "Volume")
         }

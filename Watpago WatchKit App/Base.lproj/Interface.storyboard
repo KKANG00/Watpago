@@ -93,7 +93,7 @@
                             </items>
                         </table>
                         <label alignment="left" text="Speak 볼륨 설정" id="5TZ-3P-33b"/>
-                        <slider width="1" alignment="left" value="1" steps="10" id="0b2-g7-QZu">
+                        <slider width="1" alignment="left" value="0.5" minimum="0.10000000000000001" steps="10" id="0b2-g7-QZu">
                             <connections>
                                 <action selector="SetVolume:" destination="i09-b8-gC9" id="cdR-Lq-eZ3"/>
                             </connections>

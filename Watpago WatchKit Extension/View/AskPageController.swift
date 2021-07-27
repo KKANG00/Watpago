@@ -15,10 +15,11 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
 
     var UsingLanguages: [Bool] = UserDefaults.standard.array(forKey: "LanguageState") as? [Bool] ??
                                     [Bool].init(repeating: true, count: defaultLanguages.Languages.count)
-    var userSetting: Settings = Settings([], 0)
+
+    var userSetting: Settings = Settings([])
     var languages: [Language] = []
 
-    var typedText: NSString = "안녕하세요."
+    var typedText: NSString = ""
 
     var selectedLanguageIndex = 0
     var selectedPickerTitle = ""
@@ -32,17 +33,23 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         apiCaller.delegate = self
+
+        // initial volume
+        let savedVolume = UserDefaults.standard.float(forKey: "Volume")
+        if savedVolume == 0 {
+            UserDefaults.standard.set(0.5, forKey: "Volume")
+        }
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         InputTextField.setPlaceholder("입력해주세요.")
-//        InputTextField.setText("")
-        InputTextField.setText("안녕하세요.")
+        InputTextField.setText("")
+//        InputTextField.setText("안녕하세요.")
         ShowmeButton.setEnabled(true)
 
         UsingLanguages = UserDefaults.standard.array(forKey: "LanguageState") as? [Bool] ?? UsingLanguages
-        userSetting = Settings(UsingLanguages, UserDefaults.standard.float(forKey: "Volume"))
+        userSetting = Settings(UsingLanguages)
         languages = userSetting.languages.filter {
             return $0.selected
         }

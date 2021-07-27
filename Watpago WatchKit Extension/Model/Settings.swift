@@ -9,9 +9,8 @@ import Foundation
 
 struct Settings {
     var languages: [Language] = []
-    var Volume: Float
 
-    init(_ languageState: [Bool], _ volume: Float) {
+    init(_ languageState: [Bool]) {
         if languageState.isEmpty {
             languages = []
         } else {
@@ -21,8 +20,6 @@ struct Settings {
                 i += 1
             }
         }
-
-        Volume = volume
     }
 }
 
