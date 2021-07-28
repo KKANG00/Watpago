@@ -34,6 +34,8 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
         // Configure interface objects here.
         apiCaller.delegate = self
 
+        print(context ?? "no context")
+
         // initial volume
         let savedVolume = UserDefaults.standard.float(forKey: "Volume")
         if savedVolume == 0 {
@@ -90,7 +92,7 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
             let text = typedText as String
             descriptionText = "\"\(text)\"\nin \(selectedPickerTitle) is"
 
-            self.apiCaller.RequestTranslation(text, self.selectedtranslateShort)
+            apiCaller.RequestTranslation(text, selectedtranslateShort)
         }
     }
 

@@ -58,6 +58,7 @@ class ApiCaller {
                 let decoder = JSONDecoder()
                 if let json = try? decoder.decode(response.self, from: data) {
                     translatedText = json.message.result.translatedText
+
                     self.delegate?.sendTranslatedText(translatedText)
                 }
             }

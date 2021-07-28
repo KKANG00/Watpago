@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BB781F306A15829AB1F6A30 /* Pods_Watpago_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */; };
 		6204BE9426AAB5DF0092F099 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6204BE9226AAB3FA0092F099 /* ApiCaller.swift */; };
 		6215B2BC26AFD47900B5DB5E /* defaultLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6215B2BB26AFD47900B5DB5E /* defaultLanguages.swift */; };
 		626DCA3726AD479200059965 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DCA3626AD479200059965 /* Language.swift */; };
@@ -24,8 +23,6 @@
 		627B137926A9E2A70029FEA3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 627B137826A9E2A70029FEA3 /* .swiftlint.yml */; };
 		629924C026AE7FF900EE5BA7 /* SettingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629924BF26AE7FF900EE5BA7 /* SettingPageController.swift */; };
 		62AFFEE626AB007B00800717 /* Apiconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFFEE526AB007B00800717 /* Apiconfig.swift */; };
-		88C23A39C32616868BA25A12 /* Pods_Watpago_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C94D9230D0B72457780B4F /* Pods_Watpago_WatchKit_Extension.framework */; };
-		C9CFA3EB795084E7A9CF39BB /* Pods_Watpago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +69,6 @@
 
 /* Begin PBXFileReference section */
 		0BE9FC8F8B8845F480D07049 /* Pods-Watpago WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit Extension/Pods-Watpago WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		17C94D9230D0B72457780B4F /* Pods_Watpago_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		553B1D2AE04E50910BF080FB /* Pods-Watpago WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit Extension/Pods-Watpago WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6204BE9226AAB3FA0092F099 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		6215B2BB26AFD47900B5DB5E /* defaultLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultLanguages.swift; sourceTree = "<group>"; };
@@ -95,7 +90,6 @@
 		629924BF26AE7FF900EE5BA7 /* SettingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPageController.swift; sourceTree = "<group>"; };
 		62AFFEE526AB007B00800717 /* Apiconfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apiconfig.swift; sourceTree = "<group>"; };
 		B7B462FC0C5FF28DE7863B62 /* Pods-Watpago WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit App/Pods-Watpago WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watpago.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67726E4189FA300FAE38610 /* Pods-Watpago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago.debug.xcconfig"; path = "Target Support Files/Pods-Watpago/Pods-Watpago.debug.xcconfig"; sourceTree = "<group>"; };
 		D87F4F39EFFE7D126D7D9B44 /* Pods-Watpago WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Watpago WatchKit App/Pods-Watpago WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		E16FBD33072F47C1D9F75695 /* Pods-Watpago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watpago.release.xcconfig"; path = "Target Support Files/Pods-Watpago/Pods-Watpago.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C23A39C32616868BA25A12 /* Pods_Watpago_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9CFA3EB795084E7A9CF39BB /* Pods_Watpago.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB781F306A15829AB1F6A30 /* Pods_Watpago_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +141,6 @@
 				627B135B26A9C6690029FEA3 /* Watpago WatchKit Extension */,
 				627B134526A9C6670029FEA3 /* Products */,
 				1E3F7975F98D605EBFF18FC5 /* Pods */,
-				F5693EE0B03FE7F89732208C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,16 +197,6 @@
 				629924BF26AE7FF900EE5BA7 /* SettingPageController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		F5693EE0B03FE7F89732208C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CD63E4FB338AB4E7A2A1DE8D /* Pods_Watpago.framework */,
-				202723D2F202A50D646D93AF /* Pods_Watpago_WatchKit_App.framework */,
-				17C94D9230D0B72457780B4F /* Pods_Watpago_WatchKit_Extension.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
