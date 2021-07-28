@@ -41,6 +41,8 @@ class SettingPageController: WKInterfaceController {
         DispatchQueue.main.async {
             row.languageTitle.setTextColor(self.userdefaultLanguateState[rowIndex] ? .white : .gray)
         }
+
+        UserDefaults.standard.set(userdefaultLanguateState, forKey: "LanguageState")
     }
 
     func loadTable() {
@@ -57,28 +59,7 @@ class SettingPageController: WKInterfaceController {
 
     @IBAction func SetVolume(_ value: Float) {
         userdefaultVolume = value
-    }
-
-    @IBAction func saveButtonPressed() {
-        if userdefaultLanguateState.filter({$0}).count > 0 {
-            UserDefaults.standard.set(userdefaultLanguateState, forKey: "LanguageState")
-            UserDefaults.standard.set(userdefaultVolume, forKey: "Volume")
-
-            DispatchQueue.main.async {
-                self.saveButton.setBackgroundColor(UIColor(displayP3Red: 78.0/255.0, green: 195.0/255.0, blue: 60.0/255.0, alpha: 1))
-                self.saveButton.setTitle("Done!")
-            }
-
-            let deadlineTime = DispatchTime.now() + .seconds(3)
-            DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-                self.gobackSave()
-            }
-        }
-    }
-
-    func gobackSave() {
-        self.saveButton.setBackgroundColor(UIColor(displayP3Red: 76.0/255.0, green: 170.0/255.0, blue: 222.0/255.0, alpha: 1))
-        saveButton.setTitle("Save")
+        UserDefaults.standard.set(userdefaultVolume, forKey: "Volume")
     }
 }
 

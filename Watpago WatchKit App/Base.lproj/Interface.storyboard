@@ -98,16 +98,9 @@
                                 <action selector="SetVolume:" destination="i09-b8-gC9" id="cdR-Lq-eZ3"/>
                             </connections>
                         </slider>
-                        <button width="1" alignment="left" title="Save" id="6xk-2d-EpV">
-                            <color key="backgroundColor" red="0.29803921570000003" green="0.66666666669999997" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <action selector="saveButtonPressed" destination="i09-b8-gC9" id="hEC-KT-nJJ"/>
-                            </connections>
-                        </button>
                     </items>
                     <connections>
                         <outlet property="languageTable" destination="vM6-pH-WeK" id="AkV-5O-z7B"/>
-                        <outlet property="saveButton" destination="6xk-2d-EpV" id="0TX-E4-FmV"/>
                         <outlet property="speakVolume" destination="0b2-g7-QZu" id="hTz-zv-JIO"/>
                     </connections>
                 </controller>

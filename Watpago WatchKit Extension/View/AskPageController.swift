@@ -34,8 +34,6 @@ class AskPageController: WKInterfaceController, ApiCallerDelegate {
         // Configure interface objects here.
         apiCaller.delegate = self
 
-        print(context ?? "no context")
-
         // initial volume
         let savedVolume = UserDefaults.standard.float(forKey: "Volume")
         if savedVolume == 0 {
