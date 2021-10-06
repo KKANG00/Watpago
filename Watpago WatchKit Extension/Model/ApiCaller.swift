@@ -22,7 +22,7 @@ struct result: Codable {
     let translatedText: String
 }
 
-protocol ApiCallerDelegate {
+protocol ApiCallerDelegate: AnyObject {
     func sendTranslatedText(_ resultText: String)
 }
 
@@ -30,7 +30,7 @@ class ApiCaller {
     let ClientID = Apiconfig.ClientID
     let ClientSecret = Apiconfig.ClientSecret
 
-    var delegate: ApiCallerDelegate?
+    weak var delegate: ApiCallerDelegate?
 
     func RequestTranslation(_ text: String, _ language: String) {
 
